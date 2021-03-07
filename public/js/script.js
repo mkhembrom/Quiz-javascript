@@ -97,6 +97,10 @@ submitBtn.addEventListener("click", () => {
 
 	console.log(answer == quizData[currentQuestion].correct);
 
+	if(!answer) {
+		return undefined;
+	}
+
 	if(answer == quizData[currentQuestion].correct) {
 
 		score++;
